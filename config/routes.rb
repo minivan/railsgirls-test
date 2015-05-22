@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :posts
-  root to: "posts#index"  
+  root to: "pages#landing"  
   get "features" => "pages#features"
   get "landing" => "pages#landing"
 
