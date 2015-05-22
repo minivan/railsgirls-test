@@ -4,6 +4,7 @@
 
     <%= simple_form_for @post do |form| %>  
       <%= form.input  :link, :placeholder => "Insert link"  %>  
+      <%= form.input :image, as: :attachinary %>
       <%= form.button :submit %>  
     <% end %>  
   </div>

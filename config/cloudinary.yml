@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dhp6dzpqf
+  api_key: '934112632866848'
+  api_secret: BxPRi_ih0dW87z5EG5XZS0Lm6xs
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dhp6dzpqf
+  api_key: '934112632866848'
+  api_secret: BxPRi_ih0dW87z5EG5XZS0Lm6xs
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dhp6dzpqf
+  api_key: '934112632866848'
+  api_secret: BxPRi_ih0dW87z5EG5XZS0Lm6xs
+  enhance_image_tag: true
+  static_image_support: false
