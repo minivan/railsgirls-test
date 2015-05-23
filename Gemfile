@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 gem 'devise'
-gem 'bootstrap-sass'
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -18,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'bootstrap-sass'
 gem 'simple_form'
-gem 'cloudinary'  
+gem 'cloudinary'
 gem 'attachinary'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -48,4 +46,6 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
