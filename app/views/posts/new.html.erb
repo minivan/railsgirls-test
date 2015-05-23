@@ -1,11 +1,12 @@
 <div class="container">
   <div class="col-lg-4">
-    <h1> New Post</h1>  
+    <h1>Postare nouă</h1>  
 
     <%= simple_form_for @post do |form| %>  
-      <%= form.input  :link, :placeholder => "Insert link"  %>  
-      <%= form.input :image, as: :attachinary %>
-      <%= form.button :submit %>  
+      <%= form.input :title, :placeholder => "Dă-i un titlu bun", :label => "Titlu"  %>  
+      <%= form.input :body, :placeholder => "Descriere", :label => "Descriere" %>
+      <%= form.input :image, as: :attachinary, :label => "Imagine" %>
+      <%= form.button :submit, "Creează postarea" %>  
     <% end %>  
   </div>
 </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150522231755) do
+ActiveRecord::Schema.define(version: 20150523000451) do
 
   create_table "attachinary_files", force: :cascade do |t|
     t.integer  "attachinariable_id"
@@ -30,10 +30,11 @@ ActiveRecord::Schema.define(version: 20150522231755) do
   add_index "attachinary_files", ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
 
   create_table "posts", force: :cascade do |t|
-    t.string   "link"
+    t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+    t.text     "body"
   end
 
   create_table "users", force: :cascade do |t|
