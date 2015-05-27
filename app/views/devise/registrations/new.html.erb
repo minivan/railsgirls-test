@@ -8,6 +8,7 @@
 
         <div class="form-inputs">
           <%= f.input :email, required: true, autofocus: true, label: "Adresa e-mail" %>
+          <%= f.input :name, required: true, label: "Nume" %>
           <%= f.input :password, required: true, hint: ("cel puțin #{@minimum_password_length} caractere" if @validatable), label: "Parolă" %>
           <%= f.input :password_confirmation, required: true, label: "Parola din nou"%>
         </div>
