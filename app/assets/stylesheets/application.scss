@@ -33,17 +33,18 @@
   }
 }
 
-.row {
+.collection {
  -moz-column-width: 20em;
  -webkit-column-width: 20em;
+ column-width: 20em;
  -moz-column-gap: 10px;
- -webkit-column-gap:10px; 
-}
-
-.row > .item {
- display: inline-block;
- padding: 0;
- // margin: 10px;
- width:  100%; 
- float:none;
+ -webkit-column-gap: 10px; 
+ column-gap: 10px;
+ 
+  .item {
+   display: inline-block;
+   padding: 0;
+   width:  100%; 
+   float:none;
+  }
 }

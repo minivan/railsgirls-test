@@ -1,6 +1,7 @@
 <%= render "shared/navbar" %>
 <div class="container">  
-  <%= render @posts %>
+  <div class="collection">
+    <%= render @posts %>
   </div>
   <div class="pagination-container">
     <%= paginate @posts %>
