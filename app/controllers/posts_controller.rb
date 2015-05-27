@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_filter :authenticate_user!  
 
   def index
+    @posts = Post.order(id: :desc).page params[:page]
   end
 
   def new  
