@@ -16,3 +16,16 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.signing-bg {
+  height: 100%;
+  background-image: image-url("background-resized");
+  background-size: cover;
+}
+.login-panel {
+  padding: 20px;
+  margin-top: 40px;
+  h2 {
+    text-align: center;
+  }
+}
