@@ -13,7 +13,7 @@
       <span class="label label-default">
         <%= "Posted by " + post.user.email %>
       </span>
-      <% if current_user == post.user %>  
+      <% if current_user == post.user %>
         <%= link_to(post_path(post), method: :delete, class: 'btn btn-danger btn-xs pull-right') do %>
           <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
         <% end %>
