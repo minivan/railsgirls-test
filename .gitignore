@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 todo.txt
+
+# Ignore application configuration
+/config/application.yml
