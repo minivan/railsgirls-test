@@ -1,7 +1,7 @@
 <div class="item">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h5><%= post.title %></h5>
+      <h5><%= link_to post.title, post %></h5>
     </div>
     <div class="panel-body">
       <%= cl_image_tag(post.image.path, width: 500, class: 'img-responsive img-thumbnail') %>

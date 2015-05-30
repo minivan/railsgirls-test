@@ -1,32 +1,36 @@
 class PostsController < ApplicationController
-  before_filter :authenticate_user!  
+  before_filter :authenticate_user!
 
   def index
     @posts = Post.order(id: :desc).page params[:page]
   end
 
-  def new  
+  def show
+    @post = Post.find(params[:id])
+  end
+
+  def new
     @post = Post.new
   end
 
-  def create  
+  def create
     @post=Post.create(post_params)
     @post.user = current_user
       @post.save
-    redirect_to posts_path  
+    redirect_to posts_path
   end
 
-  def destroy  
+  def destroy
     @post = Post.find(params[:id])
     @post.destroy
-    redirect_to posts_path  
+    redirect_to posts_path
   end
 
-  def post_params  
+  def post_params
     params.require(:post).permit!
   end
 
-  def edit  
+  def edit
     @post = Post.find(params[:id])
   end
 
@@ -37,5 +41,5 @@ class PostsController < ApplicationController
     else
         render 'edit'
     end
-  end  
+  end
 end

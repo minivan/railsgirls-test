@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
 
   validates :name, presence: true
   has_many :posts
+  has_many :comments
 
   def recent_posts
     posts.order(id: :desc).limit(10)
