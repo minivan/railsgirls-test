@@ -6,6 +6,11 @@ class User < ActiveRecord::Base
          :omniauthable, :omniauth_providers => [:facebook]
 
   validates :name, presence: true
+  has_many :posts
+
+  def recent_posts
+    posts.order(id: :desc).limit(10)
+  end
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
